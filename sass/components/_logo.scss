@@ -16,7 +16,9 @@
   }
   
     @include desktop{
-      margin-right: 92px;
+      span{
+        margin-right: 92px;
+      }
     }
   &--light {
     span{
