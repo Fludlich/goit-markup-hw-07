@@ -243,6 +243,16 @@ button {
   right: 10px;
   top: 10px;
 }
+@media screen and (min-width: 768px) {
+  .mobile__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile__button {
+    display: none;
+  }
+}
 
 .container {
   max-width: 1200px;
@@ -537,6 +547,16 @@ button {
 }
 .mobile__social-link {
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
 }
 
 .follow {

@@ -87,5 +87,10 @@
     &__social-link{
         color: var(--accent-color);
     }
-
+    @include tablet{
+        display: none;
+    }
+  @include desktop{
+    display: none;
+  }
 }
