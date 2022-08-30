@@ -19,10 +19,12 @@
       &__item{
         display: flex;
         align-items: center;
-        @include mobile{
           flex-direction: column;
           gap: 20px;
-        }
+        @include desktop{
+            flex-direction: row;
+            gap: 12px;
+           }
         
       }
       &__input-box{
@@ -49,6 +51,7 @@
         @include tablet{
           max-width: 450px;
         }
+        
       }
     
       &__icon{
@@ -59,5 +62,8 @@
         text-align: center;
         margin: 0%;
       }
+      @include desktop{
+        text-align: start;
+       }
   }
  

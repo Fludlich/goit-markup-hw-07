@@ -1,4 +1,7 @@
 .header {
+  @include mobile{
+    position: relative;
+  }
     border-bottom: 1px solid #ececec;
     &__container{
       display: flex;
@@ -58,6 +61,10 @@
         gap: 10px;
         flex-direction: column;
       }
+      @include desktop{
+        flex-direction: row;
+        gap: 30px;
+       }
     }
     
     &__mail, 

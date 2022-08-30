@@ -2,8 +2,14 @@
   
   .client{
     padding: 60px 0;
+    @include desktop{
+      padding: 94px 0;
+     }
     &__title{
       margin-bottom: 30px;
+      @include desktop{
+        margin-bottom: 50px;
+       }
     }
     &__list{
       display: flex;
@@ -21,6 +27,9 @@
       @include tablet{
         width: calc((100% - 60px)/3);
       }
+      @include desktop{
+        width: calc((100% - 150px)/6);
+       }
 
     }
     &__link{

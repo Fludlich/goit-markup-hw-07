@@ -1,8 +1,14 @@
 .team {
     background-color: var(--fill-space-color);
     padding: 60px 0;
+    @include desktop{
+      padding: 94px 0;
+     }
     &__title {
       margin-bottom: 30px;
+      @include desktop{
+        margin-bottom: 50px;
+       }
     }
     &__list {
       display: flex;
@@ -29,6 +35,10 @@
       @include tablet{
         width: calc((100% - 30px)/2);
       }
+      @include desktop{
+        width: calc((100% - 90px)/4 );
+        padding-bottom: 30px;
+       }
     }
     &__user {
       margin: 50px 0 10px 0;

@@ -3,15 +3,18 @@
     margin-top: 20px;
     text-align: center;
     align-items: center;
-    // justify-content: center;
+    @include desktop{
+     justify-content: center;
+     font-size: 14px;
+     }
+  
   
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
   color: var(--border-check-color);
   
-  font-size: 12px;
-  line-height: 1.16;
+ 
 
     & a{
     
@@ -21,6 +24,9 @@
       
         color: var(--text-link-color);
         margin-left: 5px;
+        @include desktop{
+          font-size: 14px;
+        }
       }
       &__area{
         position: relative;
