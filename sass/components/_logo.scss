@@ -14,18 +14,17 @@
     color: var(--tytle-text-color);
       margin-right: 88px;
   }
-  
+  span{
     @include desktop{
-      span{
-        margin-right: 92px;
-      }
+      
+    margin-right: 92px;
+    }
     }
   &--light {
     span{
       margin: 0%;
       color: var(--primary-white-color);
     }
-    
   }
   
   &:focus {
