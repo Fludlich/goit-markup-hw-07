@@ -11,12 +11,18 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &-part {
-    color: var(--tytle-text-color);
-    margin-right: 93px;
+  &__part {
+    span{
+      color: var(--tytle-text-color);
+      margin-right: 88px;
+    }
+   
   }
-  &-part-inverse {
-    color: var(--primary-white-color);
+  &__part-inverse {
+    span{
+      color: var(--primary-white-color);
+    }
+    
   }
   
   &:focus {

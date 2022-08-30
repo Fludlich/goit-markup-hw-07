@@ -1,11 +1,9 @@
-.soc{
+.social{
     margin: 0 auto;
     &__list{
       display: flex;
-      width: 206px;
-      justify-content: space-between;
       padding: 0%;
-     margin: 0 32px;
+      gap: 10px;
     }
     &__link{
   
@@ -26,5 +24,47 @@
             fill: var(--primary-white-color);
           }
     }
+    @include mobile{
+      display: flex;
+      justify-content: center;
+    }
+    &__title{
+      text-align: center;
+      margin: 0%;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+      
+    }
+    // &__list-footer{
+    //   padding: 0;
+    // }
+    &__link-dec{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus{
+      
+        background-color: var(--accent-color);
+      }
+    }
+    @include mobile{
+      margin: 0%;
+      text-align: center;
+    }
+   
   }
   
