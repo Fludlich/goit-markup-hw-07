@@ -10,19 +10,37 @@
         align-items: center;
       // }
       @include tablet{
-        gap: 60px 165px;
+        // gap: 60px 165px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: baseline;
+        padding-left: 76px;
+        padding-right: 89px;
       }
       @include desktop{
         flex-wrap: nowrap;
         gap: 70px;
-        align-items: center;
+        align-items: baseline;
+        padding-left: 0;
+        padding-right: 0;
+       }
+       
+    }
+    &__title{
+      text-align: center;
+      margin: 0%;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+      @include desktop{
+        text-align: start;
        }
     }
-    
   }
   .footer__connect-item{
     display: flex;
